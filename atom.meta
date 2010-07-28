@@ -1,0 +1,8 @@
+;; -*- scheme -*-
+
+((license "BSD")
+ (doc-from-wiki)
+ (author "Jim Ursetto")
+ (synopsis "Atom 1.0 feed reader and writer")
+ (needs matchable ssax sxml-serializer)
+ (category xml))

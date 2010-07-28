@@ -1,0 +1,7 @@
+(compile -s -O2 -d1 -j atom atom.scm)
+(compile -s -O2 -d0 atom.import.scm)
+
+(install-extension
+ 'atom
+ '("atom.so" "atom.import.so")
+ '((version 0.1)))
