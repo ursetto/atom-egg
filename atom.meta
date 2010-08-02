@@ -4,5 +4,5 @@
  (doc-from-wiki)
  (author "Jim Ursetto")
  (synopsis "Atom 1.0 feed reader and writer")
- (needs matchable ssax sxml-serializer)
+ (needs matchable ssax (sxml-serializer 0.2))
  (category xml))

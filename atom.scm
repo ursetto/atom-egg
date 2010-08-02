@@ -54,12 +54,10 @@
 (use matchable)
 (use regex) (import irregex)
 
-(define +atom-egg-version+ "0.1")
+(define +atom-egg-version+ "0.1.1")
 
 (define atom-ns-prefixes
   (make-parameter `((atom03 . "http://purl.org/atom/ns#")
-                    (thr . "http://purl.org/syndication/thread/1.0")
-                    (xhtml . "http://www.w3.org/1999/xhtml")
                     . ,conventional-ns-prefixes)))
 
 (define (read-atom-doc p)
@@ -502,7 +500,10 @@
     (atom-error 'write-atom-doc "not an atom feed or entry document"))
   (serialize-sxml doc
                   output: port
-                  ns-prefixes: (atom-ns-prefixes) ;; necessary?
+                  ns-prefixes: `((*default* . "http://www.w3.org/2005/Atom")
+                                 (*default* . "http://www.w3.org/1999/xhtml")
+                                 . ,(atom-ns-prefixes))
+                  allow-prefix-redeclarations: #t
                   ))
 
 ;;;; Feeds
