@@ -48,44 +48,41 @@
 #|
 
 <?xml version="1.0" encoding="utf-8"?>
-<atom:feed xmlns:atom="http://www.w3.org/2005/Atom">
-  <atom:generator uri="http://www.example.com" version="1.0">Example Toolkit</atom:generator>
-  <atom:id>tag:example.org,2003:3</atom:id>
-  <atom:link href="http://example.org" rel="alternate" type="text/html" hreflang="en" />
-  <atom:link href="http://example.org/feed.atom" rel="self" type="application/atom+xml" />
-  <atom:rights type="text">Copyright (c) 2003, Mark Pilgrim</atom:rights>
-  <atom:subtitle type="html">
-    A &lt;em&gt;lot&lt;/em&gt; of effort went
-    into making this effortless</atom:subtitle>
-  <atom:title type="text">dive into mark</atom:title>
-  <atom:updated>2005-07-31T12:29:29Z</atom:updated>
-  <atom:entry>
-    <atom:author>
-      <atom:name>Mark Pilgrim</atom:name>
-      <atom:uri>http://example.org</atom:uri>
-      <atom:email>f8dy@example.com</atom:email>
-    </atom:author>
-    <atom:contributor>
-      <atom:name>Sam Ruby</atom:name>
-    </atom:contributor>
-    <atom:contributor>
-      <atom:name>Joe Gregorio</atom:name>
-    </atom:contributor>
-    <atom:content type="xhtml">
-      <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml">
-        <xhtml:p>
-          <xhtml:i>[Update: The Atom draft is finished.]</xhtml:i>
-        </xhtml:p>
-      </xhtml:div>
-    </atom:content>
-    <atom:id>tag:example.org,2003:3.2397</atom:id>
-    <atom:published>2003-12-13T08:29:29-04:00</atom:published>
-    <atom:title type="text">Atom draft-07 snapshot</atom:title>
-    <atom:updated>2005-07-31T12:29:29Z</atom:updated>
-    <atom:link href="http://example.org/2005/04/02/atom" rel="alternate" type="text/html" />
-    <atom:link href="http://example.org/audio/ph34r_my_podcast.mp3"
-               rel="enclosure" type="audio/mpeg" length="1337" />
-  </atom:entry>
-</atom:feed>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <generator uri="http://www.example.com" version="1.0">Example Toolkit</generator>
+  <id>tag:example.org,2003:3</id>
+  <link href="http://example.org" rel="alternate" type="text/html" hreflang="en" />
+  <link href="http://example.org/feed.atom" rel="self" type="application/atom+xml" />
+  <rights type="text">Copyright (c) 2003, Mark Pilgrim</rights>
+  <subtitle type="html">A &lt;em&gt;lot&lt;/em&gt; of effort went into making this effortless</subtitle>
+  <title type="text">dive into mark</title>
+  <updated>2005-07-31T12:29:29Z</updated>
+  <entry>
+    <author>
+      <name>Mark Pilgrim</name>
+      <uri>http://example.org</uri>
+      <email>f8dy@example.com</email>
+    </author>
+    <contributor>
+      <name>Sam Ruby</name>
+    </contributor>
+    <contributor>
+      <name>Joe Gregorio</name>
+    </contributor>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>
+          <i>[Update: The Atom draft is finished.]</i>
+        </p>
+      </div>
+    </content>
+    <id>tag:example.org,2003:3.2397</id>
+    <published>2003-12-13T08:29:29-04:00</published>
+    <title type="text">Atom draft-07 snapshot</title>
+    <updated>2005-07-31T12:29:29Z</updated>
+    <link href="http://example.org/2005/04/02/atom" rel="alternate" type="text/html" />
+    <link href="http://example.org/audio/ph34r_my_podcast.mp3" rel="enclosure" type="audio/mpeg" length="1337" />
+  </entry>
+</feed>
 
 |#

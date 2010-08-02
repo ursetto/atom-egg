@@ -18,20 +18,21 @@
 
 #|
 <?xml version="1.0" encoding="utf-8"?>
-<atom:feed xmlns:atom="http://www.w3.org/2005/Atom">
-  <atom:author>
-    <atom:name>John Doe</atom:name>
-  </atom:author>
-  <atom:id>urn:uuid:60a76c80-d399-11d9-b93C-0003939e0af6</atom:id>
-  <atom:link href="http://example.org" rel="alternate" />
-  <atom:title type="text">Example Feed</atom:title>
-  <atom:updated>2003-12-13T18:30:02Z</atom:updated>
-  <atom:entry>
-    <atom:id>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a</atom:id>
-    <atom:title type="text">Atom-Powered Robots Run Amok</atom:title>
-    <atom:updated>2003-12-13T18:30:02Z</atom:updated>
-    <atom:summary type="text">Some text.</atom:summary>
-    <atom:link href="http://example.org/2003/12/13/atom03" rel="alternate" />
-  </atom:entry>
-</atom:feed>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>John Doe</name>
+  </author>
+  <generator uri="http://3e8.org/chickadee/atom" version="0.1.1">atom egg for Chicken</generator>
+  <id>urn:uuid:60a76c80-d399-11d9-b93C-0003939e0af6</id>
+  <link href="http://example.org" rel="alternate" />
+  <title type="text">Example Feed</title>
+  <updated>2003-12-13T18:30:02Z</updated>
+  <entry>
+    <id>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a</id>
+    <title type="text">Atom-Powered Robots Run Amok</title>
+    <updated>2003-12-13T18:30:02Z</updated>
+    <summary type="text">Some text.</summary>
+    <link href="http://example.org/2003/12/13/atom03" rel="alternate" />
+  </entry>
+</feed>
 |#
