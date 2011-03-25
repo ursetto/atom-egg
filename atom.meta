@@ -5,4 +5,5 @@
  (author "Jim Ursetto")
  (synopsis "Atom 1.0 feed reader and writer")
  (needs matchable ssax (sxml-serializer 0.2) regex)
- (category xml))
+ (category xml)
+ (files "atom.meta" "atom.release-info" "tests/spec-brief.scm" "tests/spec-extensive.scm" "atom.scm" "atom.setup"))
