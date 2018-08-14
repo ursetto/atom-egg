@@ -1,4 +1,4 @@
-(use atom rfc3339)
+(import atom rfc3339)
 
 ;; rfc4287 extensive example
 

@@ -1,4 +1,4 @@
-(use atom)
+(import atom)
 
 ;; rfc4287 brief example
 

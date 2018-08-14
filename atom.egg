@@ -1,0 +1,9 @@
+;; -*- scheme -*-
+
+((license "BSD")
+ (author "Jim Ursetto")
+ (synopsis "Atom 1.0 feed reader and writer")
+ (dependencies matchable ssax (sxml-serializer 0.2) regex)
+ (category xml)
+ (version "0.1.2")
+ (components (extension atom (csc-options "-O2" "-d1"))))
