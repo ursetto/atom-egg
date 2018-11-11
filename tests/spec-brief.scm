@@ -1,4 +1,6 @@
-(import atom)
+(cond-expand
+  (chicken-4 (use atom))
+  (else (import atom)))
 
 ;; rfc4287 brief example
 

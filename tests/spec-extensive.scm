@@ -1,4 +1,6 @@
-(import atom rfc3339)
+(cond-expand
+  (chicken-4 (use atom rfc3339))
+  (else (import atom rfc3339)))
 
 ;; rfc4287 extensive example
 
