@@ -2,7 +2,8 @@
  (chicken-4
   (use test atom rfc3339))
  (else
-  (import test atom rfc3339)))
+  (import test atom rfc3339)
+  (import (chicken port))))
 
 (test "Write brief atom example from the RFC 4287 spec"
       #t
