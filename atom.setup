@@ -4,4 +4,4 @@
 (install-extension
  'atom
  '("atom.so" "atom.import.so")
- '((version "0.1.2")))
+ '((version "0.1.3")))
