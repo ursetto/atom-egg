@@ -46,15 +46,28 @@
  write-atom-doc
  )
 
-(import scheme chicken)
-(use ssax sxml-serializer)
-(use (only srfi-1 filter drop-while every any))
-(use (only srfi-13 string-concatenate))
-(use (only data-structures ->string))
-(use matchable)
-(use regex) (import irregex)
+(import scheme)
+(cond-expand
+  (chicken-4
+    (import chicken)
+    (use ssax sxml-serializer)
+    (use (only srfi-1 filter drop-while every any))
+    (use (only srfi-13 string-concatenate))
+    (use (only data-structures ->string))
+    (use matchable)
+    (use regex) (import irregex))
+  (else
+    (import (chicken base))
+    (import (chicken string))
+    (import (chicken irregex))
+    (import (chicken condition))
+    (import (only (srfi 1) filter drop-while every any))
+    (import (only (srfi 13) string-concatenate))
+    (import ssax)
+    (import sxml-serializer)
+    (import matchable)))
 
-(define +atom-egg-version+ "0.1.1")
+(define +atom-egg-version+ "0.1.2")
 
 (define atom-ns-prefixes
   (make-parameter `((atom03 . "http://purl.org/atom/ns#")
