@@ -67,7 +67,7 @@
     (import sxml-serializer)
     (import matchable)))
 
-(define +atom-egg-version+ "0.1.1")
+(define +atom-egg-version+ "0.1.2")
 
 (define atom-ns-prefixes
   (make-parameter `((atom03 . "http://purl.org/atom/ns#")
