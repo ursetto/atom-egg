@@ -29,7 +29,7 @@
   <author>
     <name>John Doe</name>
   </author>
-  <generator uri="http://3e8.org/chickadee/atom" version="0.1.1">atom egg for Chicken</generator>
+  <generator uri="https://github.com/ursetto/atom-egg" version="0.1.3">atom egg for Chicken</generator>
   <id>urn:uuid:60a76c80-d399-11d9-b93C-0003939e0af6</id>
   <link href="http://example.org" rel="alternate" />
   <title type="text">Example Feed</title>

@@ -523,7 +523,7 @@
 
 (define (make-feed #!key (authors '()) (categories '()) (contributors '())
                    (generator (make-generator "atom egg for Chicken"
-                                              uri: "http://3e8.org/chickadee/atom"
+                                              uri: "https://github.com/ursetto/atom-egg"
                                               version: +atom-egg-version+))
                    icon id (links '()) logo rights subtitle title
                    updated (entries '()))
