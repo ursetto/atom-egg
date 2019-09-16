@@ -944,6 +944,7 @@ Creating the "extensive" example feed from RFC4287:
 
 ==== Version history
 
+; 0.1.4 : Fix failing test due to incorrect version in text (Peter Bex).
 ; 0.1.3 : Add Chicken 5 support. Convert test examples to real tests.
 ; 0.1.2 : Fix missing regex dependency
 ; 0.1.1 : Use default namespace for atom and xhtml
