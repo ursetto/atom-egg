@@ -67,7 +67,7 @@
     (import sxml-serializer)
     (import matchable)))
 
-(define +atom-egg-version+ "0.1.3")
+(define +atom-egg-version+ "0.1.4")
 
 (define atom-ns-prefixes
   (make-parameter `((atom03 . "http://purl.org/atom/ns#")
@@ -523,7 +523,7 @@
 
 (define (make-feed #!key (authors '()) (categories '()) (contributors '())
                    (generator (make-generator "atom egg for Chicken"
-                                              uri: "http://3e8.org/chickadee/atom"
+                                              uri: "https://github.com/ursetto/atom-egg"
                                               version: +atom-egg-version+))
                    icon id (links '()) logo rights subtitle title
                    updated (entries '()))
