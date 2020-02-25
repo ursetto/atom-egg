@@ -6,5 +6,5 @@
  (dependencies matchable ssax (sxml-serializer 0.2) regex)
  (test-dependencies rfc3339 test)
  (category xml)
- (version "0.1.4")
+ (version "0.1.5")
  (components (extension atom (csc-options "-O2" "-d1"))))
