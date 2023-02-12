@@ -15,7 +15,7 @@ jobs:
     name: Test egg
     steps:
       - uses: actions/checkout@v3
-      - uses: ursetto/chicken-toolchain@v0
+      - uses: ursetto/test.chicken-toolchain@main
         id: chicken
         with:
           chicken-version: ${{ matrix.chicken-version }}
